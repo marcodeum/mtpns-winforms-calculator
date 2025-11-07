@@ -46,6 +46,8 @@
             textEmocional = new Label();
             label1 = new Label();
             labelResult = new Label();
+            btnDarkMode = new Button();
+            btnLightMode = new Button();
             SuspendLayout();
             // 
             // inputTextX
@@ -247,12 +249,34 @@
             labelResult.TextAlign = ContentAlignment.MiddleCenter;
             labelResult.Click += labelResult_Click;
             // 
+            // btnDarkMode
+            // 
+            btnDarkMode.Location = new Point(16, 169);
+            btnDarkMode.Name = "btnDarkMode";
+            btnDarkMode.Size = new Size(112, 34);
+            btnDarkMode.TabIndex = 19;
+            btnDarkMode.Text = "Dark Mode";
+            btnDarkMode.UseVisualStyleBackColor = true;
+            btnDarkMode.Click += btnDarkMode_Click;
+            // 
+            // btnLightMode
+            // 
+            btnLightMode.Location = new Point(134, 169);
+            btnLightMode.Name = "btnLightMode";
+            btnLightMode.Size = new Size(112, 34);
+            btnLightMode.TabIndex = 20;
+            btnLightMode.Text = "Light Mode";
+            btnLightMode.UseVisualStyleBackColor = true;
+            btnLightMode.Click += btnLightMode_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLightMode);
+            Controls.Add(btnDarkMode);
             Controls.Add(labelResult);
             Controls.Add(label1);
             Controls.Add(textEmocional);
@@ -300,5 +324,7 @@
         private Label textEmocional;
         private Label label1;
         private Label labelResult;
+        private Button btnDarkMode;
+        private Button btnLightMode;
     }
 }
