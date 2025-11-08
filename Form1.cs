@@ -194,6 +194,8 @@ namespace Exemplo
             inputTextX.BackColor = Color.Black; inputTextX.ForeColor = Color.White;
             inputTextY.BackColor = Color.Black; inputTextY.ForeColor = Color.White;
             this.BackColor = Color.Black; this.ForeColor = Color.White;
+            btnClose.BackColor = Color.Black; btnClose.ForeColor = Color.White;
+            btnApagar.BackColor = Color.Black; btnApagar.ForeColor = Color.White;
 
 
         }
@@ -221,7 +223,20 @@ namespace Exemplo
             inputTextX.BackColor = Color.White; inputTextX.ForeColor = Color.Black;
             inputTextY.BackColor = Color.White; inputTextY.ForeColor = Color.Black;
             this.BackColor = Color.White; this.ForeColor = Color.Black;
-            
+            btnClose.BackColor = Color.White; btnClose.ForeColor = Color.Black;
+            btnApagar.BackColor = Color.White; btnApagar.ForeColor = Color.Black;
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            labelOutput.Text = string.Empty;
+            labelResult.Text = string.Empty;
         }
     }
 }

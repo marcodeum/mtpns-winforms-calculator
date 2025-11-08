@@ -48,14 +48,18 @@
             labelResult = new Label();
             btnDarkMode = new Button();
             btnLightMode = new Button();
+            btnApagar = new Button();
+            btnClose = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // inputTextX
             // 
-            inputTextX.Location = new Point(16, 77);
+            inputTextX.Location = new Point(28, 98);
+            inputTextX.Margin = new Padding(2);
             inputTextX.Name = "inputTextX";
             inputTextX.PlaceholderText = "0";
-            inputTextX.Size = new Size(191, 31);
+            inputTextX.Size = new Size(135, 23);
             inputTextX.TabIndex = 1;
             inputTextX.TextChanged += inputTextX_TextChanged;
             // 
@@ -64,11 +68,12 @@
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelTitle.ForeColor = Color.White;
-            labelTitle.Location = new Point(12, 9);
-            labelTitle.MaximumSize = new Size(300, 65);
-            labelTitle.MinimumSize = new Size(300, 65);
+            labelTitle.Location = new Point(8, 5);
+            labelTitle.Margin = new Padding(2, 0, 2, 0);
+            labelTitle.MaximumSize = new Size(210, 39);
+            labelTitle.MinimumSize = new Size(210, 39);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(300, 65);
+            labelTitle.Size = new Size(210, 39);
             labelTitle.TabIndex = 0;
             labelTitle.Text = "CALCULADORADORA 😎";
             labelTitle.Click += labelTitle_Click;
@@ -79,12 +84,13 @@
             labelOutput.BackColor = Color.Black;
             labelOutput.ForeColor = Color.White;
             labelOutput.ImageAlign = ContentAlignment.TopCenter;
-            labelOutput.Location = new Point(388, 15);
-            labelOutput.MaximumSize = new Size(400, 415);
-            labelOutput.MinimumSize = new Size(400, 415);
+            labelOutput.Location = new Point(272, 9);
+            labelOutput.Margin = new Padding(2, 0, 2, 0);
+            labelOutput.MaximumSize = new Size(280, 249);
+            labelOutput.MinimumSize = new Size(280, 249);
             labelOutput.Name = "labelOutput";
-            labelOutput.Padding = new Padding(10);
-            labelOutput.Size = new Size(400, 415);
+            labelOutput.Padding = new Padding(7, 6, 7, 6);
+            labelOutput.Size = new Size(280, 249);
             labelOutput.TabIndex = 4;
             labelOutput.Text = "...";
             labelOutput.Visible = false;
@@ -92,10 +98,11 @@
             // 
             // inputTextY
             // 
-            inputTextY.Location = new Point(16, 132);
+            inputTextY.Location = new Point(28, 125);
+            inputTextY.Margin = new Padding(2);
             inputTextY.Name = "inputTextY";
             inputTextY.PlaceholderText = "0";
-            inputTextY.Size = new Size(191, 31);
+            inputTextY.Size = new Size(135, 23);
             inputTextY.TabIndex = 2;
             inputTextY.TextChanged += inputTextY_TextChanged;
             // 
@@ -103,9 +110,10 @@
             // 
             labelX.AutoSize = true;
             labelX.ForeColor = SystemColors.ButtonHighlight;
-            labelX.Location = new Point(213, 80);
+            labelX.Location = new Point(8, 101);
+            labelX.Margin = new Padding(2, 0, 2, 0);
             labelX.Name = "labelX";
-            labelX.Size = new Size(23, 25);
+            labelX.Size = new Size(14, 15);
             labelX.TabIndex = 5;
             labelX.Text = "X";
             // 
@@ -113,17 +121,19 @@
             // 
             labelY.AutoSize = true;
             labelY.ForeColor = SystemColors.ButtonHighlight;
-            labelY.Location = new Point(214, 135);
+            labelY.Location = new Point(8, 128);
+            labelY.Margin = new Padding(2, 0, 2, 0);
             labelY.Name = "labelY";
-            labelY.Size = new Size(22, 25);
+            labelY.Size = new Size(14, 15);
             labelY.TabIndex = 6;
             labelY.Text = "Y";
             // 
             // btnSoma
             // 
-            btnSoma.Location = new Point(16, 250);
+            btnSoma.Location = new Point(12, 169);
+            btnSoma.Margin = new Padding(2);
             btnSoma.Name = "btnSoma";
-            btnSoma.Size = new Size(112, 34);
+            btnSoma.Size = new Size(78, 20);
             btnSoma.TabIndex = 7;
             btnSoma.Text = "+";
             btnSoma.UseVisualStyleBackColor = true;
@@ -131,9 +141,10 @@
             // 
             // btnSub
             // 
-            btnSub.Location = new Point(134, 250);
+            btnSub.Location = new Point(94, 169);
+            btnSub.Margin = new Padding(2);
             btnSub.Name = "btnSub";
-            btnSub.Size = new Size(112, 34);
+            btnSub.Size = new Size(78, 20);
             btnSub.TabIndex = 8;
             btnSub.Text = "-";
             btnSub.UseVisualStyleBackColor = true;
@@ -141,9 +152,10 @@
             // 
             // btnMult
             // 
-            btnMult.Location = new Point(255, 250);
+            btnMult.Location = new Point(178, 169);
+            btnMult.Margin = new Padding(2);
             btnMult.Name = "btnMult";
-            btnMult.Size = new Size(112, 34);
+            btnMult.Size = new Size(78, 20);
             btnMult.TabIndex = 9;
             btnMult.Text = "*";
             btnMult.UseVisualStyleBackColor = true;
@@ -151,9 +163,10 @@
             // 
             // btnPorcent
             // 
-            btnPorcent.Location = new Point(16, 330);
+            btnPorcent.Location = new Point(12, 217);
+            btnPorcent.Margin = new Padding(2);
             btnPorcent.Name = "btnPorcent";
-            btnPorcent.Size = new Size(112, 34);
+            btnPorcent.Size = new Size(78, 20);
             btnPorcent.TabIndex = 10;
             btnPorcent.Text = "%";
             btnPorcent.UseVisualStyleBackColor = true;
@@ -161,9 +174,10 @@
             // 
             // btnDiv
             // 
-            btnDiv.Location = new Point(16, 290);
+            btnDiv.Location = new Point(12, 193);
+            btnDiv.Margin = new Padding(2);
             btnDiv.Name = "btnDiv";
-            btnDiv.Size = new Size(112, 34);
+            btnDiv.Size = new Size(78, 20);
             btnDiv.TabIndex = 11;
             btnDiv.Text = "/";
             btnDiv.UseVisualStyleBackColor = true;
@@ -171,9 +185,10 @@
             // 
             // btnAoQuad
             // 
-            btnAoQuad.Location = new Point(134, 290);
+            btnAoQuad.Location = new Point(94, 193);
+            btnAoQuad.Margin = new Padding(2);
             btnAoQuad.Name = "btnAoQuad";
-            btnAoQuad.Size = new Size(112, 34);
+            btnAoQuad.Size = new Size(78, 20);
             btnAoQuad.TabIndex = 12;
             btnAoQuad.Text = "x²";
             btnAoQuad.UseVisualStyleBackColor = true;
@@ -181,9 +196,10 @@
             // 
             // btnBinario
             // 
-            btnBinario.Location = new Point(134, 331);
+            btnBinario.Location = new Point(94, 217);
+            btnBinario.Margin = new Padding(2);
             btnBinario.Name = "btnBinario";
-            btnBinario.Size = new Size(112, 34);
+            btnBinario.Size = new Size(78, 20);
             btnBinario.TabIndex = 13;
             btnBinario.Text = "010101";
             btnBinario.UseVisualStyleBackColor = true;
@@ -191,9 +207,10 @@
             // 
             // btnRaiz
             // 
-            btnRaiz.Location = new Point(255, 290);
+            btnRaiz.Location = new Point(178, 193);
+            btnRaiz.Margin = new Padding(2);
             btnRaiz.Name = "btnRaiz";
-            btnRaiz.Size = new Size(112, 34);
+            btnRaiz.Size = new Size(78, 20);
             btnRaiz.TabIndex = 14;
             btnRaiz.Text = "√";
             btnRaiz.UseVisualStyleBackColor = true;
@@ -201,9 +218,10 @@
             // 
             // btnPotenc
             // 
-            btnPotenc.Location = new Point(255, 330);
+            btnPotenc.Location = new Point(178, 217);
+            btnPotenc.Margin = new Padding(2);
             btnPotenc.Name = "btnPotenc";
-            btnPotenc.Size = new Size(112, 34);
+            btnPotenc.Size = new Size(78, 20);
             btnPotenc.TabIndex = 15;
             btnPotenc.Text = "xʸ";
             btnPotenc.UseVisualStyleBackColor = true;
@@ -215,9 +233,10 @@
             textEmocional.BackColor = Color.Transparent;
             textEmocional.Font = new Font("Baskerville Old Face", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             textEmocional.ForeColor = SystemColors.ButtonHighlight;
-            textEmocional.Location = new Point(1, 409);
+            textEmocional.Location = new Point(1, 30);
+            textEmocional.Margin = new Padding(2, 0, 2, 0);
             textEmocional.Name = "textEmocional";
-            textEmocional.Size = new Size(390, 21);
+            textEmocional.Size = new Size(255, 14);
             textEmocional.TabIndex = 16;
             textEmocional.Text = "🔥 SOMANDO IDÉIAS, DIVIDINDO ERROS 🔥";
             // 
@@ -228,11 +247,12 @@
             label1.ForeColor = SystemColors.ControlDark;
             label1.Image = Properties.Resources.Einstein__cartoon;
             label1.ImageAlign = ContentAlignment.TopCenter;
-            label1.Location = new Point(388, 141);
-            label1.MaximumSize = new Size(400, 300);
-            label1.MinimumSize = new Size(400, 300);
+            label1.Location = new Point(272, 85);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.MaximumSize = new Size(280, 180);
+            label1.MinimumSize = new Size(280, 180);
             label1.Name = "label1";
-            label1.Size = new Size(400, 300);
+            label1.Size = new Size(280, 180);
             label1.TabIndex = 17;
             // 
             // labelResult
@@ -240,20 +260,22 @@
             labelResult.AutoSize = true;
             labelResult.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelResult.ForeColor = SystemColors.ButtonHighlight;
-            labelResult.Location = new Point(388, 64);
-            labelResult.MaximumSize = new Size(400, 70);
-            labelResult.MinimumSize = new Size(400, 70);
+            labelResult.Location = new Point(272, 38);
+            labelResult.Margin = new Padding(2, 0, 2, 0);
+            labelResult.MaximumSize = new Size(280, 42);
+            labelResult.MinimumSize = new Size(280, 42);
             labelResult.Name = "labelResult";
-            labelResult.Size = new Size(400, 70);
+            labelResult.Size = new Size(280, 42);
             labelResult.TabIndex = 18;
             labelResult.TextAlign = ContentAlignment.MiddleCenter;
             labelResult.Click += labelResult_Click;
             // 
             // btnDarkMode
             // 
-            btnDarkMode.Location = new Point(16, 169);
+            btnDarkMode.Location = new Point(12, 46);
+            btnDarkMode.Margin = new Padding(2);
             btnDarkMode.Name = "btnDarkMode";
-            btnDarkMode.Size = new Size(112, 34);
+            btnDarkMode.Size = new Size(78, 20);
             btnDarkMode.TabIndex = 19;
             btnDarkMode.Text = "Dark Mode";
             btnDarkMode.UseVisualStyleBackColor = true;
@@ -261,20 +283,55 @@
             // 
             // btnLightMode
             // 
-            btnLightMode.Location = new Point(134, 169);
+            btnLightMode.Location = new Point(94, 46);
+            btnLightMode.Margin = new Padding(2);
             btnLightMode.Name = "btnLightMode";
-            btnLightMode.Size = new Size(112, 34);
+            btnLightMode.Size = new Size(78, 20);
             btnLightMode.TabIndex = 20;
             btnLightMode.Text = "Light Mode";
             btnLightMode.UseVisualStyleBackColor = true;
             btnLightMode.Click += btnLightMode_Click;
             // 
+            // btnApagar
+            // 
+            btnApagar.Location = new Point(473, 101);
+            btnApagar.Name = "btnApagar";
+            btnApagar.Size = new Size(75, 23);
+            btnApagar.TabIndex = 21;
+            btnApagar.Text = "Apagar";
+            btnApagar.UseVisualStyleBackColor = true;
+            btnApagar.Click += btnApagar_Click;
+            // 
+            // btnClose
+            // 
+            btnClose.Location = new Point(177, 45);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(75, 23);
+            btnClose.TabIndex = 22;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(355, 2);
+            label2.Name = "label2";
+            label2.Size = new Size(118, 25);
+            label2.TabIndex = 23;
+            label2.Text = "RESULTADO";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
+            Controls.Add(label2);
+            Controls.Add(btnClose);
+            Controls.Add(btnApagar);
             Controls.Add(btnLightMode);
             Controls.Add(btnDarkMode);
             Controls.Add(labelResult);
@@ -295,7 +352,8 @@
             Controls.Add(labelOutput);
             Controls.Add(labelTitle);
             Controls.Add(inputTextX);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -326,5 +384,8 @@
         private Label labelResult;
         private Button btnDarkMode;
         private Button btnLightMode;
+        private Button btnApagar;
+        private Button btnClose;
+        private Label label2;
     }
 }
