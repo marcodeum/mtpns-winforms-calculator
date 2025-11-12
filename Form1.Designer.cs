@@ -254,6 +254,7 @@
             label1.Name = "label1";
             label1.Size = new Size(280, 180);
             label1.TabIndex = 17;
+            label1.Text = "-";
             // 
             // labelResult
             // 
@@ -294,7 +295,7 @@
             // 
             // btnApagar
             // 
-            btnApagar.Location = new Point(473, 101);
+            btnApagar.Location = new Point(94, 242);
             btnApagar.Name = "btnApagar";
             btnApagar.Size = new Size(75, 23);
             btnApagar.TabIndex = 21;
@@ -356,7 +357,7 @@
             Margin = new Padding(2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Calculadoradora";
             Load += Form1_Load_1;
             ResumeLayout(false);
             PerformLayout();

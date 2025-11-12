@@ -6,7 +6,25 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Copyright>Marco Túlio Paiva Nunes de Souza</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/marcodeum/mtpns-winforms-calculator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Title>CALCULADORADORA</Title>
+    <ApplicationIcon>IcoCalc.ico</ApplicationIcon>
+    <PackageIcon>PngCalc.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="IcoCalc.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Downloads\PngCalc.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
